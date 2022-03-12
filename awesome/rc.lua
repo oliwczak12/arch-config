@@ -571,7 +571,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 
-
+awful.spawn.with_shell("alacritty -e xinput --set-prop 13 'libinput Accel Speed' -0.65")
 awful.spawn.with_shell("alacritty -e xrandr --output HDMI-1 --left-of DP-0 --output DP-0 --primary")
 awful.spawn.with_shell("alacritty -e nitrogen --restore")
 beautiful.useless_gap = 5
